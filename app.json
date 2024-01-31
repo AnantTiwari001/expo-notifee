@@ -1,6 +1,15 @@
 {
   "expo": {
     "name": "notifee",
+    "build": {
+      "dev": {
+        "developmentClient": true,
+        "distribution": "internal",
+        "android": {
+          "image": "ubuntu-18.04-jdk-11-ndk-r19c"
+        }
+      }
+    },
     "slug": "notifee",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,10 +30,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.test_123zzz.notifee"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9c9f8476-f227-4440-be0f-6094a137907b"
+      }
     }
   }
 }
